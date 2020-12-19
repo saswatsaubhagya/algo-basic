@@ -2,8 +2,11 @@ import 'dart:io';
 
 void main(List<String> args) {
   stdout.write("Enter your String: ");
-  var name = stdin.readLineSync();
-  stdout.writeln("result-: " + reverseLoop(name));
+  var inputValue = stdin.readLineSync();
+  stdout.writeln("result-: " + reverseLoop(inputValue)); //using loop
+  stdout.writeln("result-: " + reverse(inputValue)); //using resursion
+  stdout.writeln(
+      "result-: " + reverseString(inputValue)); //using default function
 }
 
 //resursion
